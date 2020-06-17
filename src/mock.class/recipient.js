@@ -4,7 +4,7 @@ class Recipient {
   }
 
   acceptInjection(vaccine) {
-    if (vaccine.composition.contains("Virus Proteins")) {
+    if (vaccine.composition.includes("Virus Proteins")) {
       this.hasAntibodies = true;
     }
   }
